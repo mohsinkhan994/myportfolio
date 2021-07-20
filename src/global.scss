@@ -1,1 +1,11 @@
 $mainColor: black;
+
+$width: 768px;
+
+//for mobile responsiveness
+@mixin mobile {
+    @media  (max-width: #{$width}){
+        @content
+    }
+    
+}

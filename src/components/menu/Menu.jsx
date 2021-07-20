@@ -15,14 +15,14 @@ export default function Menu({menuOpen,setMenuOpen}) {
             </ul>
             <ul>
                 <li onClick= {()=> setMenuOpen(false)}>
-                    <a href= "#work">Works</a>
+                    <a href= "#project">Projects</a>
                 </li>
             </ul>
-            <ul>
+            {/* <ul>
                 <li onClick= {()=> setMenuOpen(false)}>
                     <a href= "#testimonial">Testimonial</a>
                 </li>
-            </ul>
+            </ul> */}
             <ul>
                 <li onClick= {()=> setMenuOpen(false)}>
                     <a href= "#contact">Contacts</a>

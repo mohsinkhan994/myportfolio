@@ -1,0 +1,80 @@
+.project{
+    background-color: darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .slider{
+        height: 350px;
+        display: flex;
+        position:absolute;
+        left: 0;
+
+        .container{
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .item{
+                width: 700px;
+                height: 100%;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .left{
+                flex: 4;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .leftContainer{
+                    width: 90%;
+                    height: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                    .imageContainer{
+                        width: 200px;
+                        height: 50px;
+                        border-radius: 30%;
+                        // background-color: goldenrod;
+                       display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        overflow: hidden;
+                    //    vertical-align: floor($number: 4);
+
+                        img{
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+            .right{
+                flex: 8;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h1{
+                    font-size: 35px;
+                   
+                }
+                p{
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+               
+            }
+        }
+
+    }
+}
