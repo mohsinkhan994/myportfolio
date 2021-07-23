@@ -1,6 +1,15 @@
 .app{
     height: 100vh;
-
+    z-index: 1;
+    
+    .tsparticles-canvas-el {
+        position:absolute;
+        height: 100vh;
+        width: 100vh;
+        z-index: 1;
+        pointer-events: none !important;
+    }
+   
     .sections{
         width: 100%;
         height: calc(100vh - 70px);
@@ -22,4 +31,6 @@
         }
 
     }
+    
 }
+

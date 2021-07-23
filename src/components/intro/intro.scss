@@ -3,6 +3,7 @@
 .intro{
     background-color: darkgray;
     display: flex;
+   
 
 
     @include mobile{
@@ -102,6 +103,7 @@
         img{
             width: 30px;
             animation: arrowBlink 2s infinite;
+            //  z-index: 1;
         }
         @keyframes arrowBlink { //for animation effect
             100%{
