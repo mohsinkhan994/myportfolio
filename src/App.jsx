@@ -15,7 +15,7 @@ function App() {
   return (
     
     <div className="app">
-      <Particles 
+      <Particles className="particlesCanvas"
       params={{
         "particles": {
             "line_linked": {
