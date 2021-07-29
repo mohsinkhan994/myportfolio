@@ -48,7 +48,7 @@ export const socialNetworks = [
   {
     id: 2,
     title: "Github",
-    img: "assets/Github.jpg",
+    img: "assets/gitlogo.png",
     link: "https://github.com/mohsinkhan994"
   },
   {
