@@ -11,7 +11,7 @@ export default function Intro() {
             backDelay:1500,
             backSpeed:60,
             showCursor:true,
-            strings: [ "React" , "Java"],
+            strings: [ "React" , "Java", "Node"],
 
         });
        

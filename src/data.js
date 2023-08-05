@@ -7,7 +7,7 @@ export const skillsBackend = [
   },
   {
     id: 2,
-    title: "SpringBoot 1.5",
+    title: "SpringBoot",
     img:
       "assets/springboot.png"
   },
@@ -24,17 +24,16 @@ export const skillsBackend = [
       "assets/reactLogo.png",
   },
   {
-    id: 5,
-    title: "UI Technologies",
-    img:
-      "assets/ui-tech.png",
-  },
-  {
     id: 6,
     title: "Oracle DB",
     img:
       "assets/oracle.png"
   },
+  {
+    id:5,
+    title:"Node",
+    img:"https://www.svgrepo.com/download/376337/node-js.svg"
+  }
 ];
 
 export const socialNetworks = [

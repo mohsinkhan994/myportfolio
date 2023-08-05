@@ -7,15 +7,25 @@ export default function Projects() {
 
     const data = [{
         id: "1",
+        img: "https://purepng.com/public/uploads/large/purepng.com-john-deere-logologobrand-logoiconslogos-251519940792ghsgu.png",
+        projectName: "Project- Base Station Manager",
+        projectDescription: "This project is of John Deere,which is an American corporation that manufactures agricultural machinery, heavy equipment, forestry machinery, diesel engines, drivetrains used in heavy equipment, and lawn care equipment",
+        technology: "Technical Plateform used- Java,Springboot,React,Node",
+        duration: "Period- Working on it from 28th novemeber 2022 till present."
+
+    },
+
+    {
+        id: "2",
         img: "https://mma.prnewswire.com/media/562209/ALLISON_TRANSMISSION_INC__LOGO.jpg?p=publish",
         projectName: "Project- Extranet Admin",
         projectDescription: "This project is of Allison Transmission, which is an American manufacturer of commerical automatic transmission and hybrid propulsion systems.",
         technology: "Technical Plateform used- Java,Springboot 1.5, TFS, React,HTML, CSS, Tomcat,Maven and Hibernate.",
-        duration: "Period- Working on it from 5th January 2020 till present."
+        duration: "Period- Working on it from 5th January 2020 till November 25, 2022."
 
     },
     {
-        id: "2",
+        id: "3",
         img: "assets/app.png",
         projectName: "Project- Library Management System",
         projectDescription: "This is centralized online library management system,where a student can easily search and issue the books available in college library.",
