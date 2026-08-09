@@ -1,5 +1,6 @@
 import React from "react";
 import './Portfolio.css';
+import MatrixRain from "./components/MatrixRain";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -13,11 +14,16 @@ import Footer from "./components/Footer";
 export default function Portfolio() {
   return (
     <div className="pf-root">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
       />
-      <div className="pf-grid-bg"></div>
+
+      <MatrixRain />
+      <div className="pf-scanlines" aria-hidden="true"></div>
+      <div className="pf-vignette" aria-hidden="true"></div>
 
       <Header />
 

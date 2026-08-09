@@ -1,48 +1,8 @@
 @use "./global.scss" as *;
 
-.app{
-    height: 100vh;
-    z-index: 1;
-    
-    .tsparticles-canvas-el {
-        position:absolute;
-        height: 100vh;
-        width: 100vh;
-        z-index: 1;
-        pointer-events: none !important;
-
-    }
-
-    .particlesCanvas{
-
-        @include mobile{
-
-            display: none;
-            
-        }
-
-    }
-   
-    .sections{
-        width: 100%;
-        height: calc(100vh - 70px);
-        background-color: maroon;
-        position: relative;
-        top: 70px;
-        scroll-behavior: smooth; //to scroll smoothly to thar section on click 
-        scroll-snap-type: y mandatory; 
-        scrollbar-width: none; //firefox to hide scrollbar
-        &::-webkit-scrollbar {
-            display: none; // every other browser to hide scrollbar
-        }
-
-        > *{
-            width: 100vw;
-            height: calc(100vh - 70px);
-            scroll-snap-align: start; // it leaves us to the component which has crossed 50% of section
-        
-        }
-
-    }
-    
+// The terminal theme renders the matrix canvas fixed behind everything,
+// so the app wrapper just needs to be a neutral container.
+.app {
+  min-height: 100vh;
+  position: relative;
 }

@@ -13,7 +13,16 @@ export default function Hero() {
 
   return (
     <section className="pf-hero">
-      <div>
+      <div className="pf-chrome">
+        <span className="pf-cdot pf-cdot-r"></span>
+        <span className="pf-cdot pf-cdot-y"></span>
+        <span className="pf-cdot pf-cdot-g"></span>
+        <span className="pf-chrome-title">mohsin@khan: ~</span>
+      </div>
+      <div className="pf-hero-body">
+        <div className="pf-eyebrow">
+          <span className="pf-bar"></span>$ whoami
+        </div>
         <h1 className="pf-h1">
           {showAccent ? (
             <>
