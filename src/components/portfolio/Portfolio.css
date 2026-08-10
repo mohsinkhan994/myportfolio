@@ -51,14 +51,16 @@
 }
 .pf-root ::selection{ background: var(--green); color: #04140a; }
 
-/* matrix rain + overlays sit behind everything */
-.pf-matrix{
+/* 3D holographic scene canvas + (legacy) matrix rain sit behind everything */
+.pf-matrix,
+.pf-holo{
   position: fixed;
   inset: 0;
   width: 100vw;
   height: 100vh;
   z-index: 0;
   background: var(--bg);
+  display: block;
 }
 .pf-scanlines{
   position: fixed;
@@ -599,3 +601,63 @@
   vertical-align: -2px;
   animation: pfBlink 1s steps(1) infinite;
 }
+
+/* =========================================================
+   3D / holographic scene layer
+   The HoloScene canvas is .pf-holo (positioning above).
+   These rules upgrade the glass panels so they read as
+   holographic HUD overlays floating over the 3D world —
+   stronger green glow + a very subtle border flicker.
+   No content or class names changed.
+   ========================================================= */
+
+/* stronger holographic glow + slightly more translucent so the 3D glows through */
+.pf-section,
+.pf-hero{
+  border-color: rgba(78, 255, 149, 0.32);
+  box-shadow:
+    0 0 0 1px rgba(0,0,0,0.3),
+    0 0 22px rgba(61,255,133,0.10),
+    0 20px 60px -20px rgba(0,0,0,0.85);
+}
+
+/* hero gets an extra accent glow as the focal "command window" */
+.pf-hero{
+  box-shadow:
+    0 0 0 1px rgba(0,0,0,0.3),
+    0 0 34px rgba(61,255,133,0.16),
+    0 24px 70px -24px rgba(0,0,0,0.9);
+}
+
+/* faint top-edge light bar on panels — sells the "projection" look */
+.pf-section::after,
+.pf-hero::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 12%;
+  right: 12%;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(61,255,133,0.55),
+    transparent);
+  pointer-events: none;
+}
+.pf-section{ position: relative; }
+.pf-hero{ position: relative; }
+
+/* very subtle hologram border flicker (skipped under reduced motion) */
+@media (prefers-reduced-motion: no-preference){
+  .pf-section,
+  .pf-hero{
+    animation: pfHoloFlicker 7s linear infinite;
+  }
+  @keyframes pfHoloFlicker{
+    0%, 96%, 100%{ border-color: rgba(78, 255, 149, 0.32); }
+    97%{ border-color: rgba(78, 255, 149, 0.12); }
+    98%{ border-color: rgba(78, 255, 149, 0.45); }
+    99%{ border-color: rgba(78, 255, 149, 0.20); }
+  }
+}
+

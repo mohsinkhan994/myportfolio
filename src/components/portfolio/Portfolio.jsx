@@ -1,6 +1,6 @@
 import React from "react";
 import './Portfolio.css';
-import MatrixRain from "./components/MatrixRain";
+import HoloScene from "./components/HoloScene";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -21,7 +21,7 @@ export default function Portfolio() {
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
       />
 
-      <MatrixRain />
+      <HoloScene />
       <div className="pf-scanlines" aria-hidden="true"></div>
       <div className="pf-vignette" aria-hidden="true"></div>
 
